@@ -56,9 +56,11 @@ body.dark-mode a:hover {
 }
 
 .dark-mode .navbar {
-    background-color: #bed4eb;
+    /* background-color: #bed4eb; */
     /* color: #f5f6f7; */
     color: #323232;
+    /* color: #baccdc; */
+    background-color:#baccdc;
 }
 
 .footer.dark-mode {
