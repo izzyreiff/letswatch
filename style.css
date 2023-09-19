@@ -1,0 +1,86 @@
+* { box-sizing: border-box; }
+@font-face {
+font-family: 'Courier Prime', monospace;
+font-style: normal;
+font-weight: 150;
+src: url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+}
+/* Light Mode */
+body {
+    background-color: #f5f6f7;
+    color: #1b2027;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Courier Prime', monospace;
+    line-height: 1.5;
+}
+
+a {
+    color: #40bcf4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00e054;
+}
+
+.navbar {
+    background-color: #40bcf4;
+    color: #1b2027;
+    /* padding-bottom: 20px; */
+}
+
+.footer {
+    background-color: #baccdc;
+    color: #1b2027;
+}
+
+h1, h2 {
+    color: #1b2027;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1b2027;
+    color: #f5f6f7;
+}
+
+body.dark-mode a {
+    color: #ff8001;
+}
+
+body.dark-mode a:hover {
+    color: #00e054;
+}
+
+.navbar.dark-mode {
+    background-color: #8090a0;
+    color: #f5f6f7;
+}
+
+.footer.dark-mode {
+    background-color: #8090a0;
+    color: #f5f6f7;
+}
+
+h1, h2 {
+    color: inherit;
+}
+
+.light-mode {
+    background-color: #f5f6f7;
+    color: #1b2027;
+}
+
+.dark-mode {
+    background-color: #1b2027;
+    color: #f5f6f7;
+}
+
+/* Add additional styles for the input boxes and button as needed */
+.input-group {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #40bcf4;
+}
