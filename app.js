@@ -30,7 +30,7 @@ function submitForm() {
         // Clear the error message
         errorMessage.textContent = "";
     } else {
-        errorMessage.textContent = "At least two usernames must be given!";
+        errorMessage.textContent = "At least two usernames must be submitted!";
     }
 }
 

@@ -20,13 +20,17 @@ a {
 }
 
 a:hover {
-    color: #00e054;
+    color: #ff8001;
 }
 
 .navbar {
     background-color: #40bcf4;
     color: #1b2027;
-    /* padding-bottom: 20px; */
+    padding-left: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #333; /* Set your desired background color */
+    z-index: 100; /* Adjust the z-index as needed */
 }
 
 .footer {
@@ -52,7 +56,7 @@ body.dark-mode a:hover {
     color: #00e054;
 }
 
-.navbar.dark-mode {
+.dark-mode .navbar {
     background-color: #8090a0;
     color: #f5f6f7;
 }
@@ -82,5 +86,35 @@ h1, h2 {
 }
 
 .btn {
+    outline: none !important;
+    box-shadow: none !important;
     background-color: #40bcf4;
+  }
+
+.btn:hover {
+    background-color: #ff8001;
+    /* outline-color: #40bcf4; */
+}
+
+.dark-mode .btn {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #ff8001;
+  }
+
+.dark-mode .btn:hover {
+    background-color: #00e054;
+    /* outline-color: #40bcf4; */
+}
+
+.btn-check:focus + .btn-primary, 
+.btn-primary:focus {
+    box-shadow: 0 0 0 .25rem rgba(255,0,0,.5);
+}
+.btn-check:active + .btn-primary:focus, 
+.btn-check:checked + .btn-primary:focus, 
+.btn-primary.active:focus, 
+.btn-primary:active:focus, 
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .25rem rgba(255,0,0,.5);
 }
