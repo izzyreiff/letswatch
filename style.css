@@ -66,8 +66,18 @@ body.dark-mode a:hover {
     color: #f5f6f7;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+num {
+    color: #ff8001;
+}
+
+.dark-mode num{
+    color:#00e054;
 }
 
 .light-mode {
@@ -83,6 +93,10 @@ h1, h2 {
 /* Add additional styles for the input boxes and button as needed */
 .input-group {
     margin-bottom: 10px;
+}
+
+.listy{
+    text-align: left;
 }
 
 .btn {
