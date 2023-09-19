@@ -101,24 +101,24 @@ num {
     text-align: left;
 }
 
-.btn {
+.fun-btn {
     outline: none !important;
     box-shadow: none !important;
     background-color: #40bcf4;
   }
 
-.btn:hover {
+.fun-btn:hover {
     background-color: #ff8001;
     /* outline-color: #40bcf4; */
 }
 
-.dark-mode .btn {
+.dark-mode .fun-btn {
     outline: none !important;
     box-shadow: none !important;
     background-color: #ff8001;
   }
 
-.dark-mode .btn:hover {
+.dark-mode .fun-btn:hover {
     background-color: #00e054;
     /* outline-color: #40bcf4; */
 }
