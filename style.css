@@ -29,7 +29,6 @@ a:hover {
     padding-left: 20px;
     position: sticky;
     top: 0;
-    background-color: #333; /* Set your desired background color */
     z-index: 100; /* Adjust the z-index as needed */
 }
 
@@ -57,8 +56,9 @@ body.dark-mode a:hover {
 }
 
 .dark-mode .navbar {
-    background-color: #8090a0;
-    color: #f5f6f7;
+    background-color: #bed4eb;
+    /* color: #f5f6f7; */
+    color: #323232;
 }
 
 .footer.dark-mode {
@@ -124,8 +124,8 @@ h1, h2 {
     position: fixed;
     bottom: 25px;
     right: 25px;
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,17 +140,17 @@ h1, h2 {
 
 /* Light mode toggle button icon (swap white and yellow) */
 #color-scheme-toggle i.light-mode-icon {
-font-size: 18px;
-color: #E6812E; /* Yellowish-orange color for sun in light mode */
+/* font-size: 18px; */
+color: #ff8001; /* Orange color for sun in light mode */
 }
 
 /* Dark mode toggle button icon */
 #color-scheme-toggle i.dark-mode-icon {
-font-size: 18px;
-color: #462271;
+/* font-size: 18px; */
+color: #6b7885;
 }
 
 #color-scheme-toggle:hover {
-background-color: #fdc8ee;
+background-color: #c8e1fd;
 color: #ffffff;
 }
