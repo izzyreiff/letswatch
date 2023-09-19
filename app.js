@@ -27,9 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
-
 // Function to check if at least two user inputs are filled
 function isFormValid() {
     let filledCount = 0;
@@ -78,5 +75,7 @@ function submitForm() {
     }
     console.log(numUsers)
     //////// Now actually run program LOL
+
+    
 
 }

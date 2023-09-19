@@ -15,12 +15,12 @@ body {
 }
 
 a {
-    color: #40bcf4;
+    color: #ff8001;
     text-decoration: none;
 }
 
 a:hover {
-    color: #ff8001;
+    color: #40bcf4;
 }
 
 .navbar {
@@ -48,11 +48,11 @@ body.dark-mode {
 }
 
 body.dark-mode a {
-    color: #ff8001;
+    color: #00e054;
 }
 
 body.dark-mode a:hover {
-    color: #00e054;
+    color: #ff8001;
 }
 
 .dark-mode .navbar {
@@ -106,11 +106,6 @@ num {
     margin-bottom: 10px;
 }
 
-.fun-btn:hover {
-    background-color: #ff8001;
-    margin-bottom: 10px;
-}
-
 .light-mode .fun-btn {
     outline: none !important;
     box-shadow: none !important;
@@ -127,8 +122,36 @@ num {
     color: white; /* Add a color for text in dark mode */
 }
 
+.light-mode .fun-btn:hover {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #ff8001;
+    margin-bottom: 10px;
+    color: black; /* Add a color for text in light mode */
+}
+
+.dark-mode .fun-btn:hover {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #00e054;
+    margin-bottom: 10px;
+    color: white; /* Add a color for text in dark mode */
+}
+
 .navtitle{
     color: #000000;
+}
+
+.dark-mode .navtitle{
+    color: #000000;
+}
+
+.navtitle:hover{
+    color: #fff;
+}
+
+.dark-mode .navtitle:hover{
+    color: #fff;
 }
 
 /* 
