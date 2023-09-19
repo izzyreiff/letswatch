@@ -1,8 +1,21 @@
 // JavaScript to toggle between light and dark modes
 const body = document.body;
 const modeToggle = document.getElementById("modeToggle");
-
-////////////////////
+// Form validation and submission
+const submitButton = document.getElementById("submitButton");
+const userInputs = [document.getElementById("User1"), document.getElementById("User2"), document.getElementById("User3"), document.getElementById("User4")];
+const errorMessage = document.getElementById("errorMessage");
+// Enable form submission on button click
+submitButton.addEventListener("click", submitForm);
+// Enable form submission on Enter key press
+userInputs.forEach((input) => {
+    input.addEventListener("keyup", (event) => {
+        if (event.key === "Enter") {
+            submitForm();
+        }
+    });
+});
+// Enable Light and Dark mode toggling
 document.addEventListener('DOMContentLoaded', function () {
     const colorSchemeToggle = document.getElementById('color-scheme-toggle');
     const body = document.body;
@@ -29,12 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-
-////////////////////
-// Form validation and submission
-const submitButton = document.getElementById("submitButton");
-const userInputs = [document.getElementById("User1"), document.getElementById("User2"), document.getElementById("User3"), document.getElementById("User4")];
-const errorMessage = document.getElementById("errorMessage");
 
 // Function to check if at least two user inputs are filled
 function isFormValid() {
@@ -64,21 +71,18 @@ function submitForm() {
         console.log("Value of User1 input:", value1);
         numUsers++;
     }
-
     const userInput2 = userInputs[1];
     const value2 = userInput2.value;
     if (value2 !== "") {
         console.log("Value of User2 input:", value2);
         numUsers++;
     }
-
     const userInput3 = userInputs[2];
     const value3 = userInput3.value;
     if (value3 !== "") {
         console.log("Value of User3 input:", value3);
         numUsers++;
     }
-
     const userInput4 = userInputs[3];
     const value4 = userInput4.value;
     if (value4 !== "") {
@@ -86,16 +90,6 @@ function submitForm() {
         numUsers++;
     }
     console.log(numUsers)
+    //////// Now actually run program LOL
+
 }
-
-// Enable form submission on button click
-submitButton.addEventListener("click", submitForm);
-
-// Enable form submission on Enter key press
-userInputs.forEach((input) => {
-    input.addEventListener("keyup", (event) => {
-        if (event.key === "Enter") {
-            submitForm();
-        }
-    });
-});
