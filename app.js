@@ -4,8 +4,54 @@ const modeToggle = document.getElementById("modeToggle");
 
 modeToggle.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
+    const icon = colorSchemeToggle.querySelector('i');
+    // Set the initial icon to the sun icon (light mode)
+    icon.classList.add('fa-solid', 'fa-sun', 'light-mode-icon');
+  
+    colorSchemeToggle.addEventListener('click', function () {
+      body.classList.toggle('light-mode');
+      body.classList.toggle('dark-mode');
+
+      // Toggle the icon classes
+      if (icon.classList.contains('fa-sun')) {
+        icon.classList.remove('fa-sun', 'light-mode-icon');
+        icon.classList.add('fa-moon', 'dark-mode-icon');
+      } else {
+        icon.classList.remove('fa-moon', 'dark-mode-icon');
+        icon.classList.add('fa-sun', 'light-mode-icon');
+      }
+    });
 });
 
+////////////////////
+document.addEventListener('DOMContentLoaded', function () {
+    const colorSchemeToggle = document.getElementById('color-scheme-toggle');
+    const body = document.body;
+
+    // Set the initial color scheme to dark mode
+    body.classList.add('dark-mode');
+
+    const icon = colorSchemeToggle.querySelector('i');
+
+    // Set the initial icon to the sun icon (light mode)
+    icon.classList.add('fa-solid', 'fa-sun', 'light-mode-icon');
+
+    colorSchemeToggle.addEventListener('click', function () {
+      body.classList.toggle('light-mode');
+      body.classList.toggle('dark-mode');
+
+      // Toggle the icon classes
+      if (icon.classList.contains('fa-sun')) {
+        icon.classList.remove('fa-sun', 'light-mode-icon');
+        icon.classList.add('fa-moon', 'dark-mode-icon');
+      } else {
+        icon.classList.remove('fa-moon', 'dark-mode-icon');
+        icon.classList.add('fa-sun', 'light-mode-icon');
+      }
+    });
+  });
+
+////////////////////
 // Form validation and submission
 const submitButton = document.getElementById("submitButton");
 const userInputs = [document.getElementById("User1"), document.getElementById("User2"), document.getElementById("User3"), document.getElementById("User4")];
