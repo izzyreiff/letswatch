@@ -1,6 +1,6 @@
 // JavaScript to toggle between light and dark modes
 const body = document.body;
-const modeToggle = document.getElementById("modeToggle");
+const modeToggle = document.getElementById("toggle");
 // Form validation and submission
 const submitButton = document.getElementById("submitButton");
 const userInputs = [document.getElementById("User1"), document.getElementById("User2"), document.getElementById("User3"), document.getElementById("User4")];
@@ -20,13 +20,14 @@ userInputs.forEach((input) => {
 document.addEventListener('DOMContentLoaded', function () {
     const colorSchemeToggle = document.getElementById('toggle');
     const body = document.body;
-    // Set the initial color scheme to dark mode
-    body.classList.add('dark-mode');
+
     colorSchemeToggle.addEventListener('click', function () {
-      body.classList.toggle('light-mode');
-      body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        body.classList.toggle('dark-mode');
     });
-  });
+});
+
+
 
 
 // Function to check if at least two user inputs are filled

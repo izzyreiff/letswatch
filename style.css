@@ -102,31 +102,36 @@ num {
 }
 
 .fun-btn {
-    /* outline: none !important;
-    box-shadow: none !important; */
     background-color: #40bcf4;
     margin-bottom: 10px;
-  }
+}
 
 .fun-btn:hover {
     background-color: #ff8001;
     margin-bottom: 10px;
-    /* outline-color: #40bcf4; */
+}
+
+.light-mode .fun-btn {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #40bcf4;
+    margin-bottom: 10px;
+    color: black; /* Add a color for text in light mode */
 }
 
 .dark-mode .fun-btn {
     outline: none !important;
     box-shadow: none !important;
-    background-color: #ff8001;
+    background-color: #1a1a1a;
     margin-bottom: 10px;
-  }
-
-.dark-mode .fun-btn:hover {
-    background-color: #00e054;
-    margin-bottom: 10px;
-    /* outline-color: #40bcf4; */
+    color: white; /* Add a color for text in dark mode */
 }
 
+.navtitle{
+    color: #000000;
+}
+
+/* 
 .btn-check:focus + .btn-primary, 
 .btn-primary:focus {
     box-shadow: 0 0 0 .25rem rgba(255,0,0,.5);
@@ -137,4 +142,4 @@ num {
 .btn-primary:active:focus, 
 .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 .25rem rgba(255,0,0,.5);
-}
+} */
