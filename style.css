@@ -102,8 +102,8 @@ num {
 }
 
 .fun-btn {
-    outline: none !important;
-    box-shadow: none !important;
+    /* outline: none !important;
+    box-shadow: none !important; */
     background-color: #40bcf4;
     margin-bottom: 10px;
   }
