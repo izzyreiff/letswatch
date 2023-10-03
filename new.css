@@ -1,0 +1,106 @@
+* { box-sizing: border-box; }
+@font-face {
+font-family: 'Courier Prime', monospace;
+font-style: normal;
+font-weight: 150;
+src: url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+}
+/* Light Mode */
+/* General Styles */
+body, h1, h2, h3 {
+    font-family: 'Courier Prime', monospace;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body {
+    background-color: #f5f6f7;
+    color: #1b2027;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: #ff8001;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #40bcf4;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #40bcf4;
+    color: #1b2027;
+    padding-left: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #baccdc;
+    color: #1b2027;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1b2027;
+    color: #f5f6f7;
+}
+
+body.dark-mode a {
+    color: #00e054;
+}
+
+body.dark-mode a:hover {
+    color: #ff8001;
+}
+
+.dark-mode .navbar, .dark-mode .navtitle {
+    background-color: #baccdc;
+    color: #323232;
+}
+
+.footer.dark-mode {
+    background-color: #8090a0;
+    color: #f5f6f7;
+}
+
+.dark-mode num {
+    color: #00e054;
+}
+
+/* Light Mode */
+.light-mode {
+    background-color: #f5f6f7;
+    color: #1b2027;
+}
+
+.light-mode .fun-btn, .light-mode .fun-btn:hover {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #40bcf4;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* Dark Mode Button Styles */
+.dark-mode .fun-btn, .dark-mode .fun-btn:hover {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #1a1a1a;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Navbar Title Styles */
+.navtitle, .dark-mode .navtitle:hover {
+    color: #000000;
+}
+
+.navtitle:hover {
+    color: #fff;
+}

@@ -5,7 +5,7 @@ font-style: normal;
 font-weight: 150;
 src: url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 }
-/* Light Mode */
+
 body {
     background-color: #f5f6f7;
     color: #1b2027;
@@ -153,16 +153,3 @@ num {
 .dark-mode .navtitle:hover{
     color: #fff;
 }
-
-/* 
-.btn-check:focus + .btn-primary, 
-.btn-primary:focus {
-    box-shadow: 0 0 0 .25rem rgba(255,0,0,.5);
-}
-.btn-check:active + .btn-primary:focus, 
-.btn-check:checked + .btn-primary:focus, 
-.btn-primary.active:focus, 
-.btn-primary:active:focus, 
-.show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .25rem rgba(255,0,0,.5);
-} */
